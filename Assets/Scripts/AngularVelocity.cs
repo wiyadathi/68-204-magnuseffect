@@ -19,11 +19,6 @@ public class AngularVelocity : MonoBehaviour
             // Rotate around Y axis using Angular Velocity
             rb.angularVelocity = new Vector3(0, rotateSpeed, 0);
         }
-/*        else if (Keyboard.current.sKey.isPressed)
-        {
-            // Stop rotating when key "s" is pressed
-            rb.angularVelocity = Vector3.zero;
-        }*/
         else 
         {
             //Stop rotating when no key is pressed
