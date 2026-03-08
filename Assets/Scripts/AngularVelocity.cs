@@ -1,9 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem; // New Input System
 
 public class AngularVelocity : MonoBehaviour
 {
-    public float rotateSpeed = 5f;   // rotation speed
+    public float angularSpeed; // speed for Angular Velocity
+
     Rigidbody rb;
 
     void Start()
@@ -13,15 +14,15 @@ public class AngularVelocity : MonoBehaviour
 
     void FixedUpdate()
     {
-        // When pressing "A"
+        // Press 'A' to Rotate using Angular Velocity
         if (Keyboard.current.aKey.isPressed)
         {
-            // Rotate around Y axis using Angular Velocity
-            rb.angularVelocity = new Vector3(0, rotateSpeed, 0);
+            rb.angularVelocity = new Vector3(0, angularSpeed, 0);
         }
-        else 
+
+      // Stop rotation
+        else
         {
-            //Stop rotating when no key is pressed
             rb.angularVelocity = Vector3.zero;
         }
     }
