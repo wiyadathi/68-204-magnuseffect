@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 183917231}
   - component: {fileID: 183917230}
   - component: {fileID: 183917229}
-  - component: {fileID: 183917228}
+  - component: {fileID: 183917234}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -140,18 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!75 &183917228
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183917227}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!54 &183917229
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -272,6 +260,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &183917234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183917227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16edceb4be782e448a39d9cc2979887e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MagnusEffectKick
+  kickForce: 0
+  spinAmount: 0
+  magnusStrength: 0.5
 --- !u!1 &395116287
 GameObject:
   m_ObjectHideFlags: 0
